@@ -44,7 +44,7 @@
 		F102AA1C1C7CBEEA00E2EB0C /* GIFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */; };
 		F102AA1D1C7CBEEA00E2EB0C /* GIFEditTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */; };
 		F102AA1E1C7CBEEA00E2EB0C /* GIFEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */; };
-		F18532B91C7D1558007C6A6D /* GIFFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F18532B81C7D1558007C6A6D /* GIFFonts.bundle */; };
+		F13C51781C7D1CE700C6EE24 /* GIFFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13C51771C7D1CE700C6EE24 /* GIFFonts.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,7 +88,7 @@
 		F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFLabel.m; sourceTree = "<group>"; };
 		F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFEditTextView.h; sourceTree = "<group>"; };
 		F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFEditTextView.m; sourceTree = "<group>"; };
-		F18532B81C7D1558007C6A6D /* GIFFonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GIFFonts.bundle; sourceTree = "<group>"; };
+		F13C51771C7D1CE700C6EE24 /* GIFFonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GIFFonts.bundle; sourceTree = "<group>"; };
 		F3DFAA6CC85B6B573D7ECE0B /* Pods-GIFText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFText.release.xcconfig"; path = "Pods/Target Support Files/Pods-GIFText/Pods-GIFText.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,7 +227,7 @@
 		F18532B71C7D1531007C6A6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F18532B81C7D1558007C6A6D /* GIFFonts.bundle */,
+				F13C51771C7D1CE700C6EE24 /* GIFFonts.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 				F102A9E21C7CBE4F00E2EB0C /* GIFColorCell.xib in Resources */,
 				F102A9D61C7CBE2000E2EB0C /* GIFTextMain.storyboard in Resources */,
 				F102A9DF1C7CBE4F00E2EB0C /* GIFFontCell.xib in Resources */,
-				F18532B91C7D1558007C6A6D /* GIFFonts.bundle in Resources */,
+				F13C51781C7D1CE700C6EE24 /* GIFFonts.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
