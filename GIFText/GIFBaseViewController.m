@@ -52,11 +52,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     GIFBaseViewController *base = segue.sourceViewController;
-    //if ([segue.destinationViewController isKindOfClass:[GIFBaseViewController class]]) {
-        GIFBaseViewController *gifController = segue.destinationViewController;
-        gifController.textFields = base.textFields;
-        //gifController.selectedTextView = base.selectedTextView;
-   // }
+    GIFBaseViewController *gifController = segue.destinationViewController;
+    gifController.textFields = base.textFields;
+    gifController.view.backgroundColor = [UIColor clearColor];
+    [base setModalPresentationStyle:UIModalPresentationOverCurrentContext];
 }
 
 -(void)setSelectedTextView:(GIFEditTextView *)selectedTextView
@@ -80,14 +79,5 @@
 {
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

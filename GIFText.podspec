@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
     # 2
-    s.version = "0.1.1"
+    s.version = "0.1.2"
 
     # 3
     s.license = { :type => "MIT", :file => "LICENSE" }
@@ -51,6 +51,6 @@ Pod::Spec.new do |s|
     s.source_files = "GIFText/**/*.{h,m}"
 
     # 9
-    s.resources = "GIFText/**/*.{png,jpeg,jpg,storyboard,xib}"
+    s.resources = "GIFText/**/*.{png,jpeg,jpg,storyboard,xib,ttf,bundle}"
 
 end

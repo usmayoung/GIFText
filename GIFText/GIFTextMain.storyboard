@@ -1,55 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Lx-sr-NEx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk7-54-mrr">
-                                <rect key="frame" x="0.0" y="66" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="testAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOy-mQ-5V5"/>
-                                    <segue destination="abx-uq-WoV" kind="show" animates="NO" id="DyD-IY-32G"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HTV-oA-KjY">
-                                <rect key="frame" x="63" y="67" width="258" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="changedText:" destination="BYZ-38-t0r" eventType="valueChanged" id="il3-Jt-pU3"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OQ5-Zo-qNY"/>
-                                </connections>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="BH3-ks-kjY"/>
-                    <connections>
-                        <outlet property="text" destination="HTV-oA-KjY" id="63H-WN-2DA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1094" y="355"/>
-        </scene>
         <!--Text View Controller-->
         <scene sceneID="wNE-Tk-y6s">
             <objects>
-                <viewController id="9AY-I9-cxs" customClass="GIFTextViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="9AY-I9-cxs" customClass="GIFTextViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ku8-q5-5rK"/>
                         <viewControllerLayoutGuide type="bottom" id="F32-MO-5A7"/>
@@ -63,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKS-d7-ERd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856" y="1126"/>
+            <point key="canvasLocation" x="1856" y="1202"/>
         </scene>
         <!--Color View Controller-->
         <scene sceneID="uAb-9a-ycv">
@@ -106,7 +65,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.1843904646" blue="0.1756463892" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DNU-5c-cwt" firstAttribute="top" secondItem="wbw-bp-cCe" secondAttribute="bottom" id="2CK-oY-gFW"/>
                             <constraint firstAttribute="trailing" secondItem="wbw-bp-cCe" secondAttribute="trailing" id="EgT-Ud-OfK"/>
@@ -190,15 +149,16 @@
                             <constraint firstAttribute="trailing" secondItem="rLL-XS-Kto" secondAttribute="trailing" id="fm1-k8-x49"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3vZ-K8-xj8"/>
                     <connections>
-                        <segue destination="9AY-I9-cxs" kind="presentation" identifier="GIFTextViewController" animates="NO" id="p0u-XU-p8b"/>
-                        <segue destination="aTV-Ib-Ndc" kind="presentation" identifier="GIFFontViewController" animates="NO" id="bbh-rg-thI"/>
+                        <segue destination="9AY-I9-cxs" kind="show" identifier="GIFTextViewController" animates="NO" id="p0u-XU-p8b"/>
+                        <segue destination="aTV-Ib-Ndc" kind="show" identifier="GIFFontViewController" animates="NO" id="bbh-rg-thI"/>
                         <segue destination="TDF-tc-gqu" kind="show" identifier="GIFColorViewController" animates="NO" id="xI4-VB-rTT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QqV-WA-keK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1872" y="355"/>
+            <point key="canvasLocation" x="1856" y="318"/>
         </scene>
         <!--Font-->
         <scene sceneID="udk-uK-9nG">
@@ -254,22 +214,22 @@
             <point key="canvasLocation" x="1113" y="1126"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="0g9-Og-wTi">
+        <scene sceneID="E8N-yW-9sc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Lx-sr-NEx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iYy-lo-XSl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BDD-pH-Aa4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YhT-XB-K6V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JeW-RK-RH9"/>
+                        <segue destination="abx-uq-WoV" kind="relationship" relationship="rootViewController" id="06a-rr-c8r"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ojF-8x-V5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ts-Kz-HcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="355"/>
+            <point key="canvasLocation" x="1005" y="318"/>
         </scene>
     </scenes>
 </document>

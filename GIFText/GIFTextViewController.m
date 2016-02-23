@@ -25,26 +25,7 @@
     //[self.view addSubview:self.editTextView];
     
     
-    
-    
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    self.textField.text = self.selectedTextView.text;
-    [self.textField addTarget:self
-                       action:@selector(editingChanged:)
-             forControlEvents:UIControlEventEditingChanged];
-    [self.textField becomeFirstResponder];
-}
-
--(void)loadView
-{
-    
-    UIView *view = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.view = view;
-    
+    self.view.backgroundColor = [UIColor clearColor];
     
     
     UIView *textView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -96,13 +77,13 @@
     [textView addSubview:self.textField];
     
     [textView addConstraint:[NSLayoutConstraint
-                              constraintWithItem:self.textField
-                              attribute:NSLayoutAttributeLeft
-                              relatedBy:NSLayoutRelationEqual
-                              toItem:textView
-                              attribute:NSLayoutAttributeLeft
-                              multiplier:1.0
-                              constant:8.0]];
+                             constraintWithItem:self.textField
+                             attribute:NSLayoutAttributeLeft
+                             relatedBy:NSLayoutRelationEqual
+                             toItem:textView
+                             attribute:NSLayoutAttributeLeft
+                             multiplier:1.0
+                             constant:8.0]];
     
     [textView addConstraint:[NSLayoutConstraint
                              constraintWithItem:self.textField
@@ -112,16 +93,6 @@
                              attribute:NSLayoutAttributeTop
                              multiplier:1.0
                              constant:5.0]];
-    /*
-    [textView addConstraint:[NSLayoutConstraint
-                             constraintWithItem:self.textField
-                             attribute:NSLayoutAttributeRight
-                             relatedBy:NSLayoutRelationEqual
-                             toItem:textView
-                             attribute:NSLayoutAttributeRight
-                             multiplier:1.0
-                             constant:-8.0]];
-     */
     
     [textView addConstraint:[NSLayoutConstraint
                              constraintWithItem:self.textField
@@ -192,18 +163,16 @@
                                                  name:UIKeyboardWillChangeFrameNotification
                                                object:self.view.window];
     
-    // self.editTextView = [[GIFEditTextView alloc] initWithFrame:CGRectMake(50, 100, 250, 70)];
-    //self.editTextView.backgroundColor = [UIColor greenColor];
-    //[self.view addSubview:self.editTextView];
-    
-    /*
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.textField.text = self.selectedTextView.text;
     [self.textField addTarget:self
-     action:@selector(editingChanged:)
-     forControlEvents:UIControlEventEditingChanged];
-     */
-    
-    //self.textFields = [NSMutableArray new];
-    //[self.textFields addObject:self.editTextView];
+                       action:@selector(editingChanged:)
+             forControlEvents:UIControlEventEditingChanged];
+    [self.textField becomeFirstResponder];
 }
 
 -(void)setSelectedTextView:(GIFEditTextView *)selectedTextView

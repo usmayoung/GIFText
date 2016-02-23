@@ -19,6 +19,8 @@
 
 @interface GIFTextOptionsViewController : GIFBaseViewController <GIFTextViewControllerDelegate, GIFFontViewControllerDelegate>
 
++(void)gifTextFields:(NSArray*)textFeilds withDelegate:(id)delegate;
+
 @property (nonatomic, weak) id<GIFTextOptionsViewControllerDelegate>delegate;
 
 @end

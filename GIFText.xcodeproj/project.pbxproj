@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9CC5EFFBB992AD85A1C51909 /* libPods-GIFText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B05CFA41B442467260FDF3F /* libPods-GIFText.a */; };
 		F102A9CB1C7CBBC100E2EB0C /* GIFText.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9CA1C7CBBC100E2EB0C /* GIFText.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F102A9D61C7CBE2000E2EB0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F102A9D51C7CBE2000E2EB0C /* Main.storyboard */; };
+		F102A9D61C7CBE2000E2EB0C /* GIFTextMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F102A9D51C7CBE2000E2EB0C /* GIFTextMain.storyboard */; };
 		F102A9DD1C7CBE4F00E2EB0C /* GIFFontCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9D71C7CBE4F00E2EB0C /* GIFFontCell.h */; };
 		F102A9DE1C7CBE4F00E2EB0C /* GIFFontCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9D81C7CBE4F00E2EB0C /* GIFFontCell.m */; };
 		F102A9DF1C7CBE4F00E2EB0C /* GIFFontCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F102A9D91C7CBE4F00E2EB0C /* GIFFontCell.xib */; };
@@ -44,6 +44,7 @@
 		F102AA1C1C7CBEEA00E2EB0C /* GIFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */; };
 		F102AA1D1C7CBEEA00E2EB0C /* GIFEditTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */; };
 		F102AA1E1C7CBEEA00E2EB0C /* GIFEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */; };
+		F18532B91C7D1558007C6A6D /* GIFFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F18532B81C7D1558007C6A6D /* GIFFonts.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +53,7 @@
 		F102A9C71C7CBBC100E2EB0C /* GIFText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F102A9CA1C7CBBC100E2EB0C /* GIFText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFText.h; sourceTree = "<group>"; };
 		F102A9CC1C7CBBC100E2EB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F102A9D51C7CBE2000E2EB0C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F102A9D51C7CBE2000E2EB0C /* GIFTextMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GIFTextMain.storyboard; sourceTree = "<group>"; };
 		F102A9D71C7CBE4F00E2EB0C /* GIFFontCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFontCell.h; sourceTree = "<group>"; };
 		F102A9D81C7CBE4F00E2EB0C /* GIFFontCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFFontCell.m; sourceTree = "<group>"; };
 		F102A9D91C7CBE4F00E2EB0C /* GIFFontCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIFFontCell.xib; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFLabel.m; sourceTree = "<group>"; };
 		F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFEditTextView.h; sourceTree = "<group>"; };
 		F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFEditTextView.m; sourceTree = "<group>"; };
+		F18532B81C7D1558007C6A6D /* GIFFonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GIFFonts.bundle; sourceTree = "<group>"; };
 		F3DFAA6CC85B6B573D7ECE0B /* Pods-GIFText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFText.release.xcconfig"; path = "Pods/Target Support Files/Pods-GIFText/Pods-GIFText.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,13 +142,14 @@
 		F102A9C91C7CBBC100E2EB0C /* GIFText */ = {
 			isa = PBXGroup;
 			children = (
+				F18532B71C7D1531007C6A6D /* Resources */,
 				F102A9CA1C7CBBC100E2EB0C /* GIFText.h */,
 				F102A9F41C7CBE8200E2EB0C /* Utility */,
 				F102AA0D1C7CBEBD00E2EB0C /* Controllers */,
 				F102AA1F1C7CBEEE00E2EB0C /* Controls */,
 				F102AA161C7CBED700E2EB0C /* GIFHandles */,
 				F102A9E31C7CBE6B00E2EB0C /* Views */,
-				F102A9D51C7CBE2000E2EB0C /* Main.storyboard */,
+				F102A9D51C7CBE2000E2EB0C /* GIFTextMain.storyboard */,
 				F102A9CC1C7CBBC100E2EB0C /* Info.plist */,
 			);
 			path = GIFText;
@@ -219,6 +222,14 @@
 				F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */,
 			);
 			name = Controls;
+			sourceTree = "<group>";
+		};
+		F18532B71C7D1531007C6A6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F18532B81C7D1558007C6A6D /* GIFFonts.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F102A9E21C7CBE4F00E2EB0C /* GIFColorCell.xib in Resources */,
-				F102A9D61C7CBE2000E2EB0C /* Main.storyboard in Resources */,
+				F102A9D61C7CBE2000E2EB0C /* GIFTextMain.storyboard in Resources */,
 				F102A9DF1C7CBE4F00E2EB0C /* GIFFontCell.xib in Resources */,
+				F18532B91C7D1558007C6A6D /* GIFFonts.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

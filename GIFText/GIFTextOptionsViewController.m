@@ -17,6 +17,22 @@
 
 @implementation GIFTextOptionsViewController
 
++(void)gifTextFields:(NSArray *)textFeilds withDelegate:(id)delegate
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"GIFTextMain" bundle:nil];
+    GIFTextOptionsViewController *vc = [sb instantiateViewControllerWithIdentifier:@"GIFTextOptionsViewController"];
+    vc.delegate = delegate;
+    vc.textFields = [textFeilds mutableCopy];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav.view.backgroundColor = [UIColor clearColor];
+    vc.view.backgroundColor = [UIColor clearColor];
+    [nav setModalPresentationStyle:UIModalPresentationOverCurrentContext];
+    
+    [delegate presentViewController:nav animated:NO completion:^{}];
+    //vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    //[self presentViewController:vc animated:YES completion:NULL];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Apply" style: UIBarButtonItemStylePlain target:self action:@selector(doneButtonPressed)];
@@ -29,6 +45,7 @@
         [self.textFields addObject:self.selectedTextView];
         //self.editTextView.backgroundColor = [UIColor greenColor];
         [self.view addSubview:self.selectedTextView];
+        
         [self performSegueWithIdentifier:@"GIFTextViewController" sender:self];
     }
 }
@@ -55,7 +72,8 @@
 -(void)gifTextViewControllerDidFinishWithTextFields:(NSMutableArray *)textFields
 {
     self.textFields = textFields;
-    [self dismissViewControllerAnimated:NO completion:^{}];
+    //[self dismissViewControllerAnimated:NO completion:^{}];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 -(void)gifFontViewControllerDidFinishWithTextFields:(NSMutableArray *)textFields
@@ -109,6 +127,10 @@
 
 -(void)doneButtonPressed
 {
-    [self.delegate gifTextOptionsViewControllerDidFinishWithTextFields:self.textFields];
+    [self dismissViewControllerAnimated:NO completion:^{
+        [self.selectedTextView makeEditable:NO animated:NO];
+        [self.delegate gifTextOptionsViewControllerDidFinishWithTextFields:self.textFields];
+    }];
+    
 }
 @end
