@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CC5EFFBB992AD85A1C51909 /* libPods-GIFText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B05CFA41B442467260FDF3F /* libPods-GIFText.a */; };
 		F102A9CB1C7CBBC100E2EB0C /* GIFText.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9CA1C7CBBC100E2EB0C /* GIFText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F102A9D61C7CBE2000E2EB0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F102A9D51C7CBE2000E2EB0C /* Main.storyboard */; };
 		F102A9DD1C7CBE4F00E2EB0C /* GIFFontCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9D71C7CBE4F00E2EB0C /* GIFFontCell.h */; };
@@ -43,22 +44,11 @@
 		F102AA1C1C7CBEEA00E2EB0C /* GIFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */; };
 		F102AA1D1C7CBEEA00E2EB0C /* GIFEditTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */; };
 		F102AA1E1C7CBEEA00E2EB0C /* GIFEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */; };
-		F102AA2E1C7CBF4C00E2EB0C /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA201C7CBF4C00E2EB0C /* AFHTTPSessionManager.h */; };
-		F102AA2F1C7CBF4C00E2EB0C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA211C7CBF4C00E2EB0C /* AFHTTPSessionManager.m */; };
-		F102AA301C7CBF4C00E2EB0C /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA221C7CBF4C00E2EB0C /* AFNetworking.h */; };
-		F102AA311C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA231C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h */; };
-		F102AA321C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA241C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m */; };
-		F102AA331C7CBF4C00E2EB0C /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA251C7CBF4C00E2EB0C /* AFSecurityPolicy.h */; };
-		F102AA341C7CBF4C00E2EB0C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA261C7CBF4C00E2EB0C /* AFSecurityPolicy.m */; };
-		F102AA351C7CBF4C00E2EB0C /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA271C7CBF4C00E2EB0C /* AFURLRequestSerialization.h */; };
-		F102AA361C7CBF4C00E2EB0C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA281C7CBF4C00E2EB0C /* AFURLRequestSerialization.m */; };
-		F102AA371C7CBF4C00E2EB0C /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA291C7CBF4C00E2EB0C /* AFURLResponseSerialization.h */; };
-		F102AA381C7CBF4C00E2EB0C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA2A1C7CBF4C00E2EB0C /* AFURLResponseSerialization.m */; };
-		F102AA391C7CBF4C00E2EB0C /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA2B1C7CBF4C00E2EB0C /* AFURLSessionManager.h */; };
-		F102AA3A1C7CBF4C00E2EB0C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA2C1C7CBF4C00E2EB0C /* AFURLSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B05CFA41B442467260FDF3F /* libPods-GIFText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GIFText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		810203CECE0D9F4972F3FFFE /* Pods-GIFText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GIFText/Pods-GIFText.debug.xcconfig"; sourceTree = "<group>"; };
 		F102A9C71C7CBBC100E2EB0C /* GIFText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F102A9CA1C7CBBC100E2EB0C /* GIFText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFText.h; sourceTree = "<group>"; };
 		F102A9CC1C7CBBC100E2EB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,19 +87,7 @@
 		F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFLabel.m; sourceTree = "<group>"; };
 		F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFEditTextView.h; sourceTree = "<group>"; };
 		F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFEditTextView.m; sourceTree = "<group>"; };
-		F102AA201C7CBF4C00E2EB0C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		F102AA211C7CBF4C00E2EB0C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		F102AA221C7CBF4C00E2EB0C /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		F102AA231C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		F102AA241C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		F102AA251C7CBF4C00E2EB0C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		F102AA261C7CBF4C00E2EB0C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		F102AA271C7CBF4C00E2EB0C /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		F102AA281C7CBF4C00E2EB0C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		F102AA291C7CBF4C00E2EB0C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		F102AA2A1C7CBF4C00E2EB0C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		F102AA2B1C7CBF4C00E2EB0C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		F102AA2C1C7CBF4C00E2EB0C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		F3DFAA6CC85B6B573D7ECE0B /* Pods-GIFText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFText.release.xcconfig"; path = "Pods/Target Support Files/Pods-GIFText/Pods-GIFText.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,17 +95,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC5EFFBB992AD85A1C51909 /* libPods-GIFText.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287B927C01C9497405691ABB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B05CFA41B442467260FDF3F /* libPods-GIFText.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C895B77B7B59E0192E3D93EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				810203CECE0D9F4972F3FFFE /* Pods-GIFText.debug.xcconfig */,
+				F3DFAA6CC85B6B573D7ECE0B /* Pods-GIFText.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F102A9BD1C7CBBC100E2EB0C = {
 			isa = PBXGroup;
 			children = (
 				F102A9C91C7CBBC100E2EB0C /* GIFText */,
 				F102A9C81C7CBBC100E2EB0C /* Products */,
+				C895B77B7B59E0192E3D93EC /* Pods */,
+				287B927C01C9497405691ABB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,7 +140,6 @@
 		F102A9C91C7CBBC100E2EB0C /* GIFText */ = {
 			isa = PBXGroup;
 			children = (
-				F102AA2D1C7CBF4C00E2EB0C /* AFNetworking */,
 				F102A9CA1C7CBBC100E2EB0C /* GIFText.h */,
 				F102A9F41C7CBE8200E2EB0C /* Utility */,
 				F102AA0D1C7CBEBD00E2EB0C /* Controllers */,
@@ -224,27 +221,6 @@
 			name = Controls;
 			sourceTree = "<group>";
 		};
-		F102AA2D1C7CBF4C00E2EB0C /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				F102AA201C7CBF4C00E2EB0C /* AFHTTPSessionManager.h */,
-				F102AA211C7CBF4C00E2EB0C /* AFHTTPSessionManager.m */,
-				F102AA221C7CBF4C00E2EB0C /* AFNetworking.h */,
-				F102AA231C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h */,
-				F102AA241C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m */,
-				F102AA251C7CBF4C00E2EB0C /* AFSecurityPolicy.h */,
-				F102AA261C7CBF4C00E2EB0C /* AFSecurityPolicy.m */,
-				F102AA271C7CBF4C00E2EB0C /* AFURLRequestSerialization.h */,
-				F102AA281C7CBF4C00E2EB0C /* AFURLRequestSerialization.m */,
-				F102AA291C7CBF4C00E2EB0C /* AFURLResponseSerialization.h */,
-				F102AA2A1C7CBF4C00E2EB0C /* AFURLResponseSerialization.m */,
-				F102AA2B1C7CBF4C00E2EB0C /* AFURLSessionManager.h */,
-				F102AA2C1C7CBF4C00E2EB0C /* AFURLSessionManager.m */,
-			);
-			name = AFNetworking;
-			path = ../../../eric_dev/GIFTextView/AFNetworking;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -252,7 +228,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F102AA351C7CBF4C00E2EB0C /* AFURLRequestSerialization.h in Headers */,
 				F102AA031C7CBEB700E2EB0C /* GIFBaseViewController.h in Headers */,
 				F102AA1D1C7CBEEA00E2EB0C /* GIFEditTextView.h in Headers */,
 				F102A9F01C7CBE7C00E2EB0C /* UIFont-TTF.h in Headers */,
@@ -261,21 +236,15 @@
 				F102AA141C7CBED100E2EB0C /* GIFDeleteHandle.h in Headers */,
 				F102AA121C7CBED100E2EB0C /* GIFAnchorHandle.h in Headers */,
 				F102AA1B1C7CBEEA00E2EB0C /* GIFLabel.h in Headers */,
-				F102AA2E1C7CBF4C00E2EB0C /* AFHTTPSessionManager.h in Headers */,
 				F102AA051C7CBEB700E2EB0C /* GIFTextOptionsViewController.h in Headers */,
 				F102AA091C7CBEB700E2EB0C /* GIFFontViewController.h in Headers */,
-				F102AA391C7CBF4C00E2EB0C /* AFURLSessionManager.h in Headers */,
 				F102AA0B1C7CBEB700E2EB0C /* GIFColorViewController.h in Headers */,
 				F102AA071C7CBEB700E2EB0C /* GIFTextViewController.h in Headers */,
 				F102A9E01C7CBE4F00E2EB0C /* GIFColorCell.h in Headers */,
 				F102A9EC1C7CBE7C00E2EB0C /* Colours.h in Headers */,
 				F102AA011C7CBEB700E2EB0C /* ViewController.h in Headers */,
 				F102A9CB1C7CBBC100E2EB0C /* GIFText.h in Headers */,
-				F102AA311C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h in Headers */,
-				F102AA371C7CBF4C00E2EB0C /* AFURLResponseSerialization.h in Headers */,
-				F102AA331C7CBF4C00E2EB0C /* AFSecurityPolicy.h in Headers */,
 				F102A9EE1C7CBE7C00E2EB0C /* ARLabel.h in Headers */,
-				F102AA301C7CBF4C00E2EB0C /* AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,10 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F102A9CF1C7CBBC100E2EB0C /* Build configuration list for PBXNativeTarget "GIFText" */;
 			buildPhases = (
+				3F591CAC25AF738D20D269F5 /* Check Pods Manifest.lock */,
 				F102A9C21C7CBBC100E2EB0C /* Sources */,
 				F102A9C31C7CBBC100E2EB0C /* Frameworks */,
 				F102A9C41C7CBBC100E2EB0C /* Headers */,
 				F102A9C51C7CBBC100E2EB0C /* Resources */,
+				5761D93CDB70E8B7E4F13660 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,6 +315,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F591CAC25AF738D20D269F5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5761D93CDB70E8B7E4F13660 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GIFText/Pods-GIFText-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F102A9C21C7CBBC100E2EB0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -356,20 +360,14 @@
 				F102A9F11C7CBE7C00E2EB0C /* UIFont-TTF.m in Sources */,
 				F102AA0A1C7CBEB700E2EB0C /* GIFFontViewController.m in Sources */,
 				F102AA041C7CBEB700E2EB0C /* GIFBaseViewController.m in Sources */,
-				F102AA361C7CBF4C00E2EB0C /* AFURLRequestSerialization.m in Sources */,
 				F102A9F31C7CBE7C00E2EB0C /* GIFRemoteFont.m in Sources */,
-				F102AA341C7CBF4C00E2EB0C /* AFSecurityPolicy.m in Sources */,
 				F102AA1E1C7CBEEA00E2EB0C /* GIFEditTextView.m in Sources */,
 				F102A9E11C7CBE4F00E2EB0C /* GIFColorCell.m in Sources */,
-				F102AA321C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m in Sources */,
 				F102AA0C1C7CBEB700E2EB0C /* GIFColorViewController.m in Sources */,
 				F102AA061C7CBEB700E2EB0C /* GIFTextOptionsViewController.m in Sources */,
-				F102AA3A1C7CBF4C00E2EB0C /* AFURLSessionManager.m in Sources */,
 				F102A9ED1C7CBE7C00E2EB0C /* Colours.m in Sources */,
 				F102A9DE1C7CBE4F00E2EB0C /* GIFFontCell.m in Sources */,
 				F102AA131C7CBED100E2EB0C /* GIFAnchorHandle.m in Sources */,
-				F102AA2F1C7CBF4C00E2EB0C /* AFHTTPSessionManager.m in Sources */,
-				F102AA381C7CBF4C00E2EB0C /* AFURLResponseSerialization.m in Sources */,
 				F102A9EF1C7CBE7C00E2EB0C /* ARLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +465,7 @@
 		};
 		F102A9D01C7CBBC100E2EB0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810203CECE0D9F4972F3FFFE /* Pods-GIFText.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -483,6 +482,7 @@
 		};
 		F102A9D11C7CBBC100E2EB0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DFAA6CC85B6B573D7ECE0B /* Pods-GIFText.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -516,6 +516,7 @@
 				F102A9D11C7CBBC100E2EB0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

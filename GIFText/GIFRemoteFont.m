@@ -8,6 +8,7 @@
 
 #import "GIFRemoteFont.h"
 #import <CoreText/CoreText.h>
+#import <AFNetworking/AFHTTPSessionManager.h>
 
 AFHTTPSessionManager * LoadWebFont(NSString *family, NSString *uri, void (^completionBlock)(void),
                                      AFHTTPRequestFailureBlock failureBlock)
@@ -20,6 +21,18 @@ AFHTTPSessionManager * LoadWebFont(NSString *family, NSString *uri, void (^compl
     //NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:uri]];
     NSLog(@"Loading webfont: %@, uri: %@", family, uri);
     AFHTTPSessionManager *fontRequest = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:uri]];
+    [fontRequest GET:@"" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        RegisterFont(responseObject);
+        SaveFontData(responseObject, [NSString stringWithFormat:@"%@.%@", family, [uri pathExtension]]);
+        
+        if (completionBlock) {
+            completionBlock();
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+    
+    /*
     [fontRequest GET:@"" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -33,6 +46,7 @@ AFHTTPSessionManager * LoadWebFont(NSString *family, NSString *uri, void (^compl
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
+     */
     
     return fontRequest;
     
