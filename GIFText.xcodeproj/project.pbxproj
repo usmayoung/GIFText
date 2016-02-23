@@ -8,12 +8,108 @@
 
 /* Begin PBXBuildFile section */
 		F102A9CB1C7CBBC100E2EB0C /* GIFText.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9CA1C7CBBC100E2EB0C /* GIFText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F102A9D61C7CBE2000E2EB0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F102A9D51C7CBE2000E2EB0C /* Main.storyboard */; };
+		F102A9DD1C7CBE4F00E2EB0C /* GIFFontCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9D71C7CBE4F00E2EB0C /* GIFFontCell.h */; };
+		F102A9DE1C7CBE4F00E2EB0C /* GIFFontCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9D81C7CBE4F00E2EB0C /* GIFFontCell.m */; };
+		F102A9DF1C7CBE4F00E2EB0C /* GIFFontCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F102A9D91C7CBE4F00E2EB0C /* GIFFontCell.xib */; };
+		F102A9E01C7CBE4F00E2EB0C /* GIFColorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9DA1C7CBE4F00E2EB0C /* GIFColorCell.h */; };
+		F102A9E11C7CBE4F00E2EB0C /* GIFColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9DB1C7CBE4F00E2EB0C /* GIFColorCell.m */; };
+		F102A9E21C7CBE4F00E2EB0C /* GIFColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F102A9DC1C7CBE4F00E2EB0C /* GIFColorCell.xib */; };
+		F102A9EC1C7CBE7C00E2EB0C /* Colours.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9E41C7CBE7C00E2EB0C /* Colours.h */; };
+		F102A9ED1C7CBE7C00E2EB0C /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9E51C7CBE7C00E2EB0C /* Colours.m */; };
+		F102A9EE1C7CBE7C00E2EB0C /* ARLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9E61C7CBE7C00E2EB0C /* ARLabel.h */; };
+		F102A9EF1C7CBE7C00E2EB0C /* ARLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9E71C7CBE7C00E2EB0C /* ARLabel.m */; };
+		F102A9F01C7CBE7C00E2EB0C /* UIFont-TTF.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9E81C7CBE7C00E2EB0C /* UIFont-TTF.h */; };
+		F102A9F11C7CBE7C00E2EB0C /* UIFont-TTF.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9E91C7CBE7C00E2EB0C /* UIFont-TTF.m */; };
+		F102A9F21C7CBE7C00E2EB0C /* GIFRemoteFont.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9EA1C7CBE7C00E2EB0C /* GIFRemoteFont.h */; };
+		F102A9F31C7CBE7C00E2EB0C /* GIFRemoteFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9EB1C7CBE7C00E2EB0C /* GIFRemoteFont.m */; };
+		F102AA011C7CBEB700E2EB0C /* ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9F51C7CBEB700E2EB0C /* ViewController.h */; };
+		F102AA021C7CBEB700E2EB0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9F61C7CBEB700E2EB0C /* ViewController.m */; };
+		F102AA031C7CBEB700E2EB0C /* GIFBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9F71C7CBEB700E2EB0C /* GIFBaseViewController.h */; };
+		F102AA041C7CBEB700E2EB0C /* GIFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9F81C7CBEB700E2EB0C /* GIFBaseViewController.m */; };
+		F102AA051C7CBEB700E2EB0C /* GIFTextOptionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9F91C7CBEB700E2EB0C /* GIFTextOptionsViewController.h */; };
+		F102AA061C7CBEB700E2EB0C /* GIFTextOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9FA1C7CBEB700E2EB0C /* GIFTextOptionsViewController.m */; };
+		F102AA071C7CBEB700E2EB0C /* GIFTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9FB1C7CBEB700E2EB0C /* GIFTextViewController.h */; };
+		F102AA081C7CBEB700E2EB0C /* GIFTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9FC1C7CBEB700E2EB0C /* GIFTextViewController.m */; };
+		F102AA091C7CBEB700E2EB0C /* GIFFontViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9FD1C7CBEB700E2EB0C /* GIFFontViewController.h */; };
+		F102AA0A1C7CBEB700E2EB0C /* GIFFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F102A9FE1C7CBEB700E2EB0C /* GIFFontViewController.m */; };
+		F102AA0B1C7CBEB700E2EB0C /* GIFColorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F102A9FF1C7CBEB700E2EB0C /* GIFColorViewController.h */; };
+		F102AA0C1C7CBEB700E2EB0C /* GIFColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA001C7CBEB700E2EB0C /* GIFColorViewController.m */; };
+		F102AA121C7CBED100E2EB0C /* GIFAnchorHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA0E1C7CBED100E2EB0C /* GIFAnchorHandle.h */; };
+		F102AA131C7CBED100E2EB0C /* GIFAnchorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA0F1C7CBED100E2EB0C /* GIFAnchorHandle.m */; };
+		F102AA141C7CBED100E2EB0C /* GIFDeleteHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA101C7CBED100E2EB0C /* GIFDeleteHandle.h */; };
+		F102AA151C7CBED100E2EB0C /* GIFDeleteHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA111C7CBED100E2EB0C /* GIFDeleteHandle.m */; };
+		F102AA1B1C7CBEEA00E2EB0C /* GIFLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA171C7CBEEA00E2EB0C /* GIFLabel.h */; };
+		F102AA1C1C7CBEEA00E2EB0C /* GIFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */; };
+		F102AA1D1C7CBEEA00E2EB0C /* GIFEditTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */; };
+		F102AA1E1C7CBEEA00E2EB0C /* GIFEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */; };
+		F102AA2E1C7CBF4C00E2EB0C /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA201C7CBF4C00E2EB0C /* AFHTTPSessionManager.h */; };
+		F102AA2F1C7CBF4C00E2EB0C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA211C7CBF4C00E2EB0C /* AFHTTPSessionManager.m */; };
+		F102AA301C7CBF4C00E2EB0C /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA221C7CBF4C00E2EB0C /* AFNetworking.h */; };
+		F102AA311C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA231C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h */; };
+		F102AA321C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA241C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m */; };
+		F102AA331C7CBF4C00E2EB0C /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA251C7CBF4C00E2EB0C /* AFSecurityPolicy.h */; };
+		F102AA341C7CBF4C00E2EB0C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA261C7CBF4C00E2EB0C /* AFSecurityPolicy.m */; };
+		F102AA351C7CBF4C00E2EB0C /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA271C7CBF4C00E2EB0C /* AFURLRequestSerialization.h */; };
+		F102AA361C7CBF4C00E2EB0C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA281C7CBF4C00E2EB0C /* AFURLRequestSerialization.m */; };
+		F102AA371C7CBF4C00E2EB0C /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA291C7CBF4C00E2EB0C /* AFURLResponseSerialization.h */; };
+		F102AA381C7CBF4C00E2EB0C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA2A1C7CBF4C00E2EB0C /* AFURLResponseSerialization.m */; };
+		F102AA391C7CBF4C00E2EB0C /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F102AA2B1C7CBF4C00E2EB0C /* AFURLSessionManager.h */; };
+		F102AA3A1C7CBF4C00E2EB0C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F102AA2C1C7CBF4C00E2EB0C /* AFURLSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F102A9C71C7CBBC100E2EB0C /* GIFText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F102A9CA1C7CBBC100E2EB0C /* GIFText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFText.h; sourceTree = "<group>"; };
 		F102A9CC1C7CBBC100E2EB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F102A9D51C7CBE2000E2EB0C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F102A9D71C7CBE4F00E2EB0C /* GIFFontCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFontCell.h; sourceTree = "<group>"; };
+		F102A9D81C7CBE4F00E2EB0C /* GIFFontCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFFontCell.m; sourceTree = "<group>"; };
+		F102A9D91C7CBE4F00E2EB0C /* GIFFontCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIFFontCell.xib; sourceTree = "<group>"; };
+		F102A9DA1C7CBE4F00E2EB0C /* GIFColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFColorCell.h; sourceTree = "<group>"; };
+		F102A9DB1C7CBE4F00E2EB0C /* GIFColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFColorCell.m; sourceTree = "<group>"; };
+		F102A9DC1C7CBE4F00E2EB0C /* GIFColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIFColorCell.xib; sourceTree = "<group>"; };
+		F102A9E41C7CBE7C00E2EB0C /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
+		F102A9E51C7CBE7C00E2EB0C /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colours.m; sourceTree = "<group>"; };
+		F102A9E61C7CBE7C00E2EB0C /* ARLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLabel.h; sourceTree = "<group>"; };
+		F102A9E71C7CBE7C00E2EB0C /* ARLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLabel.m; sourceTree = "<group>"; };
+		F102A9E81C7CBE7C00E2EB0C /* UIFont-TTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont-TTF.h"; sourceTree = "<group>"; };
+		F102A9E91C7CBE7C00E2EB0C /* UIFont-TTF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont-TTF.m"; sourceTree = "<group>"; };
+		F102A9EA1C7CBE7C00E2EB0C /* GIFRemoteFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFRemoteFont.h; sourceTree = "<group>"; };
+		F102A9EB1C7CBE7C00E2EB0C /* GIFRemoteFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFRemoteFont.m; sourceTree = "<group>"; };
+		F102A9F51C7CBEB700E2EB0C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F102A9F61C7CBEB700E2EB0C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F102A9F71C7CBEB700E2EB0C /* GIFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFBaseViewController.h; sourceTree = "<group>"; };
+		F102A9F81C7CBEB700E2EB0C /* GIFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFBaseViewController.m; sourceTree = "<group>"; };
+		F102A9F91C7CBEB700E2EB0C /* GIFTextOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFTextOptionsViewController.h; sourceTree = "<group>"; };
+		F102A9FA1C7CBEB700E2EB0C /* GIFTextOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFTextOptionsViewController.m; sourceTree = "<group>"; };
+		F102A9FB1C7CBEB700E2EB0C /* GIFTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFTextViewController.h; sourceTree = "<group>"; };
+		F102A9FC1C7CBEB700E2EB0C /* GIFTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFTextViewController.m; sourceTree = "<group>"; };
+		F102A9FD1C7CBEB700E2EB0C /* GIFFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFontViewController.h; sourceTree = "<group>"; };
+		F102A9FE1C7CBEB700E2EB0C /* GIFFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFFontViewController.m; sourceTree = "<group>"; };
+		F102A9FF1C7CBEB700E2EB0C /* GIFColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFColorViewController.h; sourceTree = "<group>"; };
+		F102AA001C7CBEB700E2EB0C /* GIFColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFColorViewController.m; sourceTree = "<group>"; };
+		F102AA0E1C7CBED100E2EB0C /* GIFAnchorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFAnchorHandle.h; sourceTree = "<group>"; };
+		F102AA0F1C7CBED100E2EB0C /* GIFAnchorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFAnchorHandle.m; sourceTree = "<group>"; };
+		F102AA101C7CBED100E2EB0C /* GIFDeleteHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFDeleteHandle.h; sourceTree = "<group>"; };
+		F102AA111C7CBED100E2EB0C /* GIFDeleteHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFDeleteHandle.m; sourceTree = "<group>"; };
+		F102AA171C7CBEEA00E2EB0C /* GIFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFLabel.h; sourceTree = "<group>"; };
+		F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFLabel.m; sourceTree = "<group>"; };
+		F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFEditTextView.h; sourceTree = "<group>"; };
+		F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFEditTextView.m; sourceTree = "<group>"; };
+		F102AA201C7CBF4C00E2EB0C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		F102AA211C7CBF4C00E2EB0C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		F102AA221C7CBF4C00E2EB0C /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		F102AA231C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		F102AA241C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		F102AA251C7CBF4C00E2EB0C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		F102AA261C7CBF4C00E2EB0C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		F102AA271C7CBF4C00E2EB0C /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		F102AA281C7CBF4C00E2EB0C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		F102AA291C7CBF4C00E2EB0C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		F102AA2A1C7CBF4C00E2EB0C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		F102AA2B1C7CBF4C00E2EB0C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		F102AA2C1C7CBF4C00E2EB0C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +142,107 @@
 		F102A9C91C7CBBC100E2EB0C /* GIFText */ = {
 			isa = PBXGroup;
 			children = (
+				F102AA2D1C7CBF4C00E2EB0C /* AFNetworking */,
 				F102A9CA1C7CBBC100E2EB0C /* GIFText.h */,
+				F102A9F41C7CBE8200E2EB0C /* Utility */,
+				F102AA0D1C7CBEBD00E2EB0C /* Controllers */,
+				F102AA1F1C7CBEEE00E2EB0C /* Controls */,
+				F102AA161C7CBED700E2EB0C /* GIFHandles */,
+				F102A9E31C7CBE6B00E2EB0C /* Views */,
+				F102A9D51C7CBE2000E2EB0C /* Main.storyboard */,
 				F102A9CC1C7CBBC100E2EB0C /* Info.plist */,
 			);
 			path = GIFText;
+			sourceTree = "<group>";
+		};
+		F102A9E31C7CBE6B00E2EB0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F102A9D71C7CBE4F00E2EB0C /* GIFFontCell.h */,
+				F102A9D81C7CBE4F00E2EB0C /* GIFFontCell.m */,
+				F102A9D91C7CBE4F00E2EB0C /* GIFFontCell.xib */,
+				F102A9DA1C7CBE4F00E2EB0C /* GIFColorCell.h */,
+				F102A9DB1C7CBE4F00E2EB0C /* GIFColorCell.m */,
+				F102A9DC1C7CBE4F00E2EB0C /* GIFColorCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F102A9F41C7CBE8200E2EB0C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F102A9E41C7CBE7C00E2EB0C /* Colours.h */,
+				F102A9E51C7CBE7C00E2EB0C /* Colours.m */,
+				F102A9E61C7CBE7C00E2EB0C /* ARLabel.h */,
+				F102A9E71C7CBE7C00E2EB0C /* ARLabel.m */,
+				F102A9E81C7CBE7C00E2EB0C /* UIFont-TTF.h */,
+				F102A9E91C7CBE7C00E2EB0C /* UIFont-TTF.m */,
+				F102A9EA1C7CBE7C00E2EB0C /* GIFRemoteFont.h */,
+				F102A9EB1C7CBE7C00E2EB0C /* GIFRemoteFont.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		F102AA0D1C7CBEBD00E2EB0C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F102A9F51C7CBEB700E2EB0C /* ViewController.h */,
+				F102A9F61C7CBEB700E2EB0C /* ViewController.m */,
+				F102A9F71C7CBEB700E2EB0C /* GIFBaseViewController.h */,
+				F102A9F81C7CBEB700E2EB0C /* GIFBaseViewController.m */,
+				F102A9F91C7CBEB700E2EB0C /* GIFTextOptionsViewController.h */,
+				F102A9FA1C7CBEB700E2EB0C /* GIFTextOptionsViewController.m */,
+				F102A9FB1C7CBEB700E2EB0C /* GIFTextViewController.h */,
+				F102A9FC1C7CBEB700E2EB0C /* GIFTextViewController.m */,
+				F102A9FD1C7CBEB700E2EB0C /* GIFFontViewController.h */,
+				F102A9FE1C7CBEB700E2EB0C /* GIFFontViewController.m */,
+				F102A9FF1C7CBEB700E2EB0C /* GIFColorViewController.h */,
+				F102AA001C7CBEB700E2EB0C /* GIFColorViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F102AA161C7CBED700E2EB0C /* GIFHandles */ = {
+			isa = PBXGroup;
+			children = (
+				F102AA0E1C7CBED100E2EB0C /* GIFAnchorHandle.h */,
+				F102AA0F1C7CBED100E2EB0C /* GIFAnchorHandle.m */,
+				F102AA101C7CBED100E2EB0C /* GIFDeleteHandle.h */,
+				F102AA111C7CBED100E2EB0C /* GIFDeleteHandle.m */,
+			);
+			name = GIFHandles;
+			sourceTree = "<group>";
+		};
+		F102AA1F1C7CBEEE00E2EB0C /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F102AA171C7CBEEA00E2EB0C /* GIFLabel.h */,
+				F102AA181C7CBEEA00E2EB0C /* GIFLabel.m */,
+				F102AA191C7CBEEA00E2EB0C /* GIFEditTextView.h */,
+				F102AA1A1C7CBEEA00E2EB0C /* GIFEditTextView.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		F102AA2D1C7CBF4C00E2EB0C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F102AA201C7CBF4C00E2EB0C /* AFHTTPSessionManager.h */,
+				F102AA211C7CBF4C00E2EB0C /* AFHTTPSessionManager.m */,
+				F102AA221C7CBF4C00E2EB0C /* AFNetworking.h */,
+				F102AA231C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h */,
+				F102AA241C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m */,
+				F102AA251C7CBF4C00E2EB0C /* AFSecurityPolicy.h */,
+				F102AA261C7CBF4C00E2EB0C /* AFSecurityPolicy.m */,
+				F102AA271C7CBF4C00E2EB0C /* AFURLRequestSerialization.h */,
+				F102AA281C7CBF4C00E2EB0C /* AFURLRequestSerialization.m */,
+				F102AA291C7CBF4C00E2EB0C /* AFURLResponseSerialization.h */,
+				F102AA2A1C7CBF4C00E2EB0C /* AFURLResponseSerialization.m */,
+				F102AA2B1C7CBF4C00E2EB0C /* AFURLSessionManager.h */,
+				F102AA2C1C7CBF4C00E2EB0C /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = ../../../eric_dev/GIFTextView/AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +252,30 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F102AA351C7CBF4C00E2EB0C /* AFURLRequestSerialization.h in Headers */,
+				F102AA031C7CBEB700E2EB0C /* GIFBaseViewController.h in Headers */,
+				F102AA1D1C7CBEEA00E2EB0C /* GIFEditTextView.h in Headers */,
+				F102A9F01C7CBE7C00E2EB0C /* UIFont-TTF.h in Headers */,
+				F102A9F21C7CBE7C00E2EB0C /* GIFRemoteFont.h in Headers */,
+				F102A9DD1C7CBE4F00E2EB0C /* GIFFontCell.h in Headers */,
+				F102AA141C7CBED100E2EB0C /* GIFDeleteHandle.h in Headers */,
+				F102AA121C7CBED100E2EB0C /* GIFAnchorHandle.h in Headers */,
+				F102AA1B1C7CBEEA00E2EB0C /* GIFLabel.h in Headers */,
+				F102AA2E1C7CBF4C00E2EB0C /* AFHTTPSessionManager.h in Headers */,
+				F102AA051C7CBEB700E2EB0C /* GIFTextOptionsViewController.h in Headers */,
+				F102AA091C7CBEB700E2EB0C /* GIFFontViewController.h in Headers */,
+				F102AA391C7CBF4C00E2EB0C /* AFURLSessionManager.h in Headers */,
+				F102AA0B1C7CBEB700E2EB0C /* GIFColorViewController.h in Headers */,
+				F102AA071C7CBEB700E2EB0C /* GIFTextViewController.h in Headers */,
+				F102A9E01C7CBE4F00E2EB0C /* GIFColorCell.h in Headers */,
+				F102A9EC1C7CBE7C00E2EB0C /* Colours.h in Headers */,
+				F102AA011C7CBEB700E2EB0C /* ViewController.h in Headers */,
 				F102A9CB1C7CBBC100E2EB0C /* GIFText.h in Headers */,
+				F102AA311C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.h in Headers */,
+				F102AA371C7CBF4C00E2EB0C /* AFURLResponseSerialization.h in Headers */,
+				F102AA331C7CBF4C00E2EB0C /* AFSecurityPolicy.h in Headers */,
+				F102A9EE1C7CBE7C00E2EB0C /* ARLabel.h in Headers */,
+				F102AA301C7CBF4C00E2EB0C /* AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +336,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F102A9E21C7CBE4F00E2EB0C /* GIFColorCell.xib in Resources */,
+				F102A9D61C7CBE2000E2EB0C /* Main.storyboard in Resources */,
+				F102A9DF1C7CBE4F00E2EB0C /* GIFFontCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +349,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F102AA081C7CBEB700E2EB0C /* GIFTextViewController.m in Sources */,
+				F102AA1C1C7CBEEA00E2EB0C /* GIFLabel.m in Sources */,
+				F102AA151C7CBED100E2EB0C /* GIFDeleteHandle.m in Sources */,
+				F102AA021C7CBEB700E2EB0C /* ViewController.m in Sources */,
+				F102A9F11C7CBE7C00E2EB0C /* UIFont-TTF.m in Sources */,
+				F102AA0A1C7CBEB700E2EB0C /* GIFFontViewController.m in Sources */,
+				F102AA041C7CBEB700E2EB0C /* GIFBaseViewController.m in Sources */,
+				F102AA361C7CBF4C00E2EB0C /* AFURLRequestSerialization.m in Sources */,
+				F102A9F31C7CBE7C00E2EB0C /* GIFRemoteFont.m in Sources */,
+				F102AA341C7CBF4C00E2EB0C /* AFSecurityPolicy.m in Sources */,
+				F102AA1E1C7CBEEA00E2EB0C /* GIFEditTextView.m in Sources */,
+				F102A9E11C7CBE4F00E2EB0C /* GIFColorCell.m in Sources */,
+				F102AA321C7CBF4C00E2EB0C /* AFNetworkReachabilityManager.m in Sources */,
+				F102AA0C1C7CBEB700E2EB0C /* GIFColorViewController.m in Sources */,
+				F102AA061C7CBEB700E2EB0C /* GIFTextOptionsViewController.m in Sources */,
+				F102AA3A1C7CBF4C00E2EB0C /* AFURLSessionManager.m in Sources */,
+				F102A9ED1C7CBE7C00E2EB0C /* Colours.m in Sources */,
+				F102A9DE1C7CBE4F00E2EB0C /* GIFFontCell.m in Sources */,
+				F102AA131C7CBED100E2EB0C /* GIFAnchorHandle.m in Sources */,
+				F102AA2F1C7CBF4C00E2EB0C /* AFHTTPSessionManager.m in Sources */,
+				F102AA381C7CBF4C00E2EB0C /* AFURLResponseSerialization.m in Sources */,
+				F102A9EF1C7CBE7C00E2EB0C /* ARLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
