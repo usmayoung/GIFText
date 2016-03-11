@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '17A45364EE896740C6E4F6E8'
+               BlueprintIdentifier = 'BA09D6E2D689FFDBC112DA5A'
                BlueprintName = 'Pods-GIFText'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-GIFText.a'>

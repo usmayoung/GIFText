@@ -33,7 +33,7 @@
         self.bgView = [[UIView alloc] init];
         
         self.bgView.translatesAutoresizingMaskIntoConstraints = NO;
-        //bgView.backgroundColor = [UIColor yellowColor];
+        //self.bgView.backgroundColor = [UIColor yellowColor];
         
         [self addSubview:self.bgView];
         

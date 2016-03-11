@@ -7,6 +7,7 @@
 //
 
 #import "GIFTextOptionsViewController.h"
+#import "GIFRemoteFont.h"
 
 @interface GIFTextOptionsViewController ()
 - (IBAction)addTextSelected:(id)sender;
@@ -19,6 +20,7 @@
 
 +(void)gifTextFields:(NSArray *)textFeilds withDelegate:(id)delegate
 {
+    LoadAllFontsFromDisk();
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"GIFTextMain" bundle:nil];
     GIFTextOptionsViewController *vc = [sb instantiateViewControllerWithIdentifier:@"GIFTextOptionsViewController"];
     vc.delegate = delegate;

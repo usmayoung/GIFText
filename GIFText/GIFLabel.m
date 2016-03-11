@@ -27,7 +27,7 @@
     self = [super init];
     if (self) {
         _borderColor = [UIColor blueColor];
-        _borderSize = 5;
+        _borderSize = 0;
         
     }
     
