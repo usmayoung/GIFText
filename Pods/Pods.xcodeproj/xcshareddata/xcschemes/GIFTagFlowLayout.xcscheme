@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B3A775E0690E6EE15B6C624F'
-               BlueprintName = 'Pods-GIFText'
+               BlueprintIdentifier = 'F020611EC71651CFFC22194B'
+               BlueprintName = 'GIFTagFlowLayout'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-GIFText.a'>
+               BuildableName = 'libGIFTagFlowLayout.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

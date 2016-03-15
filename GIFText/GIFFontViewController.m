@@ -11,12 +11,15 @@
 #import "GIFFontCell.h"
 #import "UIFont-TTF.h"
 
+#import "GIFTagFlowLayout.h"
+
 @interface GIFFontViewController ()
 {
-    GIFFontCell *_sizingCell;
 }
 @property (nonatomic, strong) NSMutableArray *fonts;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet GIFTagFlowLayout *flowLayout;
+@property (strong, nonatomic) GIFFontCell *sizingCell;
 - (IBAction)doneSelected:(id)sender;
 @end
 
@@ -35,13 +38,17 @@
     [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"GIFFontCell"];
     
     
-    _sizingCell = [[cellNib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+    self.sizingCell = [[cellNib instantiateWithOwner:nil options:nil] objectAtIndex:0];
     
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    self.flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.flowLayout.minimumLineSpacing = 0;
+    self.flowLayout.minimumInteritemSpacing = 0;
+    [self.flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    //UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     //[flowLayout setItemSize:CGSizeMake(50, 50)];
-    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    //[flowLayout setEstimatedItemSize:CGSizeMake(50, 50)];
-    [self.collectionView setCollectionViewLayout:flowLayout];
+    //[flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    //[self.flowLayout setEstimatedItemSize:CGSizeMake(50, 50)];
+    //[self.collectionView setCollectionViewLayout:flowLayout];
     // Do any additional setup after loading the view.
 }
 
@@ -106,7 +113,7 @@
     
     [cell.label setText:font.fontName];
     
-    cell.label.font = font;
+    //cell.label.font = font;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView
@@ -125,8 +132,17 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self _configureCell:self.sizingCell forIndexPath:indexPath];
+    CGSize s = [self.sizingCell systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    s.height = 50;
+    return s;
+}
 
 
+
+/*
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [self _configureCell:_sizingCell forIndexPath:indexPath];
@@ -137,21 +153,28 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     return s;
     //return CGSizeMake(50, 50);
 }
+ */
 
+/*
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     return 2;
 }
+ */
 
+/*
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
     return 0;
 }
+ */
 
+/*
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     return UIEdgeInsetsMake(2,2,2,2);
 }
+ */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,6 +7,22 @@
 //
 
 #import "GIFFontCell.h"
+
+@implementation GIFFontCell
+
+-(void)awakeFromNib
+{
+    self.layer.cornerRadius = 4;
+    //self.tagNameMaxWidthContraint.constant = [[UIScreen mainScreen] bounds].size.width - (8 * 2 - 8 * 2);
+    
+    self.tagNameMaxWidthContraint.constant = [[UIScreen mainScreen] bounds].size.width;
+    self.backgroundColor = [UIColor colorWithRed:.1 green:.1 blue:.1 alpha:1];
+}
+
+@end
+
+
+/*
 static CGSize _extraMargins = {0,0};
 
 @implementation GIFFontCell
@@ -40,4 +56,6 @@ static CGSize _extraMargins = {0,0};
     return size;
 }
 
+
 @end
+  */

@@ -1,0 +1,32 @@
+{
+  "name": "GIFText",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "summary": "GIFText is a text editor",
+  "requires_arc": true,
+  "version": "0.1.4",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Eric Young": "eric@gifit.us"
+  },
+  "homepage": "http://github.com/usmayoung/GIFText",
+  "source": {
+    "git": "https://github.com/usmayoung/GIFText.git",
+    "tag": "0.1.4"
+  },
+  "frameworks": "UIKit",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.0"
+    ],
+    "CHTCollectionViewWaterfallLayout": [
+
+    ]
+  },
+  "source_files": "GIFText/**/*.{h,m}",
+  "resources": "GIFText/**/*.{png,jpeg,jpg,storyboard,xib,bundle}"
+}

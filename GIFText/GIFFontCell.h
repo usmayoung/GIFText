@@ -11,9 +11,9 @@
 @interface GIFFontCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tagNameMaxWidthContraint;
 
-
-- (CGSize)intrinsicContentSize;
+//- (CGSize)intrinsicContentSize;
 
 
 @end

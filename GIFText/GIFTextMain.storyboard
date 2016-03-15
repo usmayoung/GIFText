@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
@@ -161,33 +160,15 @@
         <!--Font-->
         <scene sceneID="udk-uK-9nG">
             <objects>
-                <viewController title="Font" automaticallyAdjustsScrollViewInsets="NO" id="aTV-Ib-Ndc" customClass="GIFFontViewController" sceneMemberID="viewController">
+                <viewController title="Font" id="aTV-Ib-Ndc" customClass="GIFFontViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ORH-oW-bBN"/>
                         <viewControllerLayoutGuide type="bottom" id="yzY-XP-rlK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yBf-5n-0rl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5tv-Tk-rRn">
-                                <rect key="frame" x="0.0" y="546" width="600" height="54"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="W1i-Y5-jLz"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Nh9-6r-EMi">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="aTV-Ib-Ndc" id="x84-Ky-GX7"/>
-                                    <outlet property="delegate" destination="aTV-Ib-Ndc" id="qpW-el-6VR"/>
-                                </connections>
-                            </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-9b-Aq6">
                                 <rect key="frame" x="0.0" y="20" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
@@ -195,16 +176,53 @@
                                     <action selector="doneSelected:" destination="aTV-Ib-Ndc" eventType="touchUpInside" id="9Wh-dh-aay"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5tv-Tk-rRn">
+                                <rect key="frame" x="0.0" y="468" width="320" height="100"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="W1i-Y5-jLz"/>
+                                    <constraint firstAttribute="height" constant="100" id="tU5-D6-Qwf"/>
+                                </constraints>
+                                <collectionViewLayout key="collectionViewLayout" id="OI8-uI-2V9" customClass="GIFTagFlowLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GIFFontCell" id="phq-Bl-IwG">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="W1i-Y5-jLz"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="aTV-Ib-Ndc" id="x84-Ky-GX7"/>
+                                    <outlet property="delegate" destination="aTV-Ib-Ndc" id="qpW-el-6VR"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yzY-XP-rlK" firstAttribute="top" secondItem="5tv-Tk-rRn" secondAttribute="bottom" id="AHN-gc-RoW"/>
-                            <constraint firstAttribute="trailing" secondItem="5tv-Tk-rRn" secondAttribute="trailing" id="Twy-SA-MFE"/>
-                            <constraint firstItem="5tv-Tk-rRn" firstAttribute="leading" secondItem="yBf-5n-0rl" secondAttribute="leading" id="lXN-KE-v8d"/>
+                            <constraint firstAttribute="trailing" secondItem="5tv-Tk-rRn" secondAttribute="trailing" id="1Z2-Ei-ifB"/>
+                            <constraint firstItem="yzY-XP-rlK" firstAttribute="top" secondItem="5tv-Tk-rRn" secondAttribute="bottom" id="8eW-ua-65B"/>
+                            <constraint firstItem="5tv-Tk-rRn" firstAttribute="top" secondItem="yBf-5n-0rl" secondAttribute="top" id="CXd-Z9-Trg"/>
+                            <constraint firstItem="5tv-Tk-rRn" firstAttribute="leading" secondItem="yBf-5n-0rl" secondAttribute="leading" id="wiS-HD-HCj"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CXd-Z9-Trg"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="collectionView" destination="5tv-Tk-rRn" id="OOF-Gp-nMR"/>
+                        <outlet property="flowLayout" destination="OI8-uI-2V9" id="CzM-pd-Xsa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5S-Al-UF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
