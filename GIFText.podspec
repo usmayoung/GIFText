@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
     # 2
-    s.version = "0.1.6"
+    s.version = "0.1.7"
 
     # 3
     s.license = { :type => "MIT", :file => "LICENSE" }
@@ -45,9 +45,8 @@ Pod::Spec.new do |s|
     # 7
     s.framework = "UIKit"
     s.dependency 'AFNetworking', '~> 2.0'
-    s.dependency 'GIFTagFlowLayout', :path => '~/Documents/Libraries/GIFTagFlowLayout'
-    s.dependency 'CHTCollectionViewWaterfallLayout'
-    #s.dependency 'MBProgressHUD', '~> 0.9.0'
+    s.dependency 'GIFTagFlowLayout'
+    s.dependency 'GIFColorPicker'
 
     # 8
     s.source_files = "GIFText/**/*.{h,m}"

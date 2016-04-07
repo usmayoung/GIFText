@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B13B53201E905B773B12451BA08D0DA6E542FAD1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B13B53201E905B773B12451BA08D0DA6E542FAD1" : 0,
+    "FC39C251538BF19E0BA4DE16A23E255B6BA9F5F7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C884D69E-C73C-4C4B-9491-32494DF4D502",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B13B53201E905B773B12451BA08D0DA6E542FAD1" : "GIFText\/",
+    "FC39C251538BF19E0BA4DE16A23E255B6BA9F5F7" : "GIFTagFlowLayout\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GIFText",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GIFText.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/usmayoung\/GIFText.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B13B53201E905B773B12451BA08D0DA6E542FAD1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/usmayoung\/GIFTagFlowLayout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC39C251538BF19E0BA4DE16A23E255B6BA9F5F7"
+    }
+  ]
+}

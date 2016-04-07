@@ -1,0 +1,6 @@
+/Pods
+xcuserdata/
+*.xcworkspace/
+.rvmrc
+.DS_Store
+/Build

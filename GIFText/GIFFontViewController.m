@@ -11,15 +11,18 @@
 #import "GIFFontCell.h"
 #import "UIFont-TTF.h"
 
-#import "GIFTagFlowLayout.h"
+#import "TagCell.h"
+
+//#import "GIFTagFlowLayout.h"
+
 
 @interface GIFFontViewController ()
 {
 }
 @property (nonatomic, strong) NSMutableArray *fonts;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet GIFTagFlowLayout *flowLayout;
-@property (strong, nonatomic) GIFFontCell *sizingCell;
+@property (weak, nonatomic) IBOutlet GIFTagLayout *flowLayout;
+@property (strong, nonatomic) TagCell *sizingCell;
 - (IBAction)doneSelected:(id)sender;
 @end
 
@@ -34,22 +37,13 @@
     }
    
     
-    UINib *cellNib = [UINib nibWithNibName:@"GIFFontCell" bundle:nil];
-    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"GIFFontCell"];
-    
-    
+    UINib *cellNib = [UINib nibWithNibName:@"TagCell" bundle:nil];
+    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"tagCell"];
+    self.collectionView.backgroundColor = [UIColor clearColor];
     self.sizingCell = [[cellNib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+    //self.flowLayout.numberOfRows = 4;
+    self.flowLayout.delegate = self;
     
-    self.flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.flowLayout.minimumLineSpacing = 0;
-    self.flowLayout.minimumInteritemSpacing = 0;
-    [self.flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    //UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    //[flowLayout setItemSize:CGSizeMake(50, 50)];
-    //[flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    //[self.flowLayout setEstimatedItemSize:CGSizeMake(50, 50)];
-    //[self.collectionView setCollectionViewLayout:flowLayout];
-    // Do any additional setup after loading the view.
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -95,11 +89,9 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    //NSLog(@"fonts count %lu", (unsigned long)self.fonts.count);
-    NSLog(@"create cell");
-    static NSString *cellIdentifier = @"GIFFontCell";
+    static NSString *cellIdentifier = @"tagCell";
     
-    GIFFontCell *cell = (GIFFontCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    TagCell *cell = (TagCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     [self _configureCell:cell forIndexPath:indexPath];
     
@@ -107,13 +99,15 @@
     
 }
 
-- (void)_configureCell:(GIFFontCell *)cell forIndexPath:(NSIndexPath *)indexPath
+- (void)_configureCell:(TagCell *)cell forIndexPath:(NSIndexPath *)indexPath
 {
     UIFont *font = [self.fonts objectAtIndex:indexPath.row];
     
     [cell.label setText:font.fontName];
-    
-    //cell.label.font = font;
+    cell.label.font = font;
+    cell.layer.cornerRadius = 4;
+    cell.layer.borderWidth = 1;
+    cell.layer.borderColor = [UIColor blackColor].CGColor;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView
@@ -132,6 +126,15 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     
 }
 
+-(CGFloat)collectionView:(UICollectionView *)collectionView widthForTagAtIndexPath:(NSIndexPath *)index withHeight:(CGFloat)height
+{
+    [self _configureCell:self.sizingCell forIndexPath:index];
+    CGSize s = [self.sizingCell systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    return s.width;
+}
+
+
+/*
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [self _configureCell:self.sizingCell forIndexPath:indexPath];
@@ -139,6 +142,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     s.height = 50;
     return s;
 }
+ */
 
 
 

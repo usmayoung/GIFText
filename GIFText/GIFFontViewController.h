@@ -7,6 +7,7 @@
 //
 
 #import "GIFBaseViewController.h"
+#import <GIFTagFlowLayout/GIFTagFlowLayout.h>
 
 @class GIFFontViewController;
 
@@ -14,7 +15,7 @@
 -(void)gifFontViewControllerDidFinishWithTextFields:(NSMutableArray*)textFields;
 @end
 
-@interface GIFFontViewController : GIFBaseViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface GIFFontViewController : GIFBaseViewController <UICollectionViewDataSource, UICollectionViewDelegate, GIFTagLayoutDelegate>
 
 @property (nonatomic, weak) id<GIFFontViewControllerDelegate>delegate;
 

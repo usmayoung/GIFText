@@ -47,6 +47,19 @@
 		F13C51781C7D1CE700C6EE24 /* GIFFonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13C51771C7D1CE700C6EE24 /* GIFFonts.bundle */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F11861D51CB6C7EE001ED5CD /* Embeded Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embeded Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2B05CFA41B442467260FDF3F /* libPods-GIFText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GIFText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		810203CECE0D9F4972F3FFFE /* Pods-GIFText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GIFText/Pods-GIFText.debug.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +285,7 @@
 				F102A9C41C7CBBC100E2EB0C /* Headers */,
 				F102A9C51C7CBBC100E2EB0C /* Resources */,
 				5761D93CDB70E8B7E4F13660 /* Copy Pods Resources */,
+				F11861D51CB6C7EE001ED5CD /* Embeded Frameworks */,
 			);
 			buildRules = (
 			);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Text View Controller-->
@@ -62,10 +62,37 @@
                                     <outlet property="delegate" destination="TDF-tc-gqu" id="fqV-fv-gfa"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcV-XB-21y">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uc-Mk-k6r" customClass="GIFColorsPicker">
+                                        <rect key="frame" x="225" y="25" width="150" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.29628862519999999" blue="0.1131683835" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Dqb-Ip-pWO"/>
+                                            <constraint firstAttribute="height" constant="150" id="XRf-YZ-17o"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ringWidth">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2uc-Mk-k6r" firstAttribute="centerX" secondItem="kcV-XB-21y" secondAttribute="centerX" id="9vE-km-u0l"/>
+                                    <constraint firstItem="2uc-Mk-k6r" firstAttribute="centerY" secondItem="kcV-XB-21y" secondAttribute="centerY" id="a4l-Bn-zwD"/>
+                                    <constraint firstAttribute="height" constant="200" id="g5U-Cq-kJe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="DNU-5c-cwt" firstAttribute="top" secondItem="wbw-bp-cCe" secondAttribute="bottom" id="2CK-oY-gFW"/>
+                            <constraint firstItem="kcV-XB-21y" firstAttribute="leading" secondItem="4Hk-r4-9yV" secondAttribute="leading" id="Dfy-cl-7Bf"/>
                             <constraint firstAttribute="trailing" secondItem="wbw-bp-cCe" secondAttribute="trailing" id="EgT-Ud-OfK"/>
+                            <constraint firstAttribute="trailing" secondItem="kcV-XB-21y" secondAttribute="trailing" id="Uuz-q1-JPU"/>
+                            <constraint firstItem="DNU-5c-cwt" firstAttribute="top" secondItem="kcV-XB-21y" secondAttribute="bottom" id="rCA-fr-YXb"/>
                             <constraint firstItem="wbw-bp-cCe" firstAttribute="leading" secondItem="4Hk-r4-9yV" secondAttribute="leading" id="y2O-BI-Vpb"/>
                         </constraints>
                     </view>
@@ -177,15 +204,15 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5tv-Tk-rRn">
-                                <rect key="frame" x="0.0" y="468" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="318" width="320" height="250"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="W1i-Y5-jLz"/>
-                                    <constraint firstAttribute="height" constant="100" id="tU5-D6-Qwf"/>
+                                    <constraint firstAttribute="height" constant="250" id="tU5-D6-Qwf"/>
                                 </constraints>
-                                <collectionViewLayout key="collectionViewLayout" id="OI8-uI-2V9" customClass="GIFTagFlowLayout"/>
+                                <collectionViewLayout key="collectionViewLayout" id="OI8-uI-2V9" customClass="GIFTagLayout"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GIFFontCell" id="phq-Bl-IwG">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tagLabel" id="phq-Bl-IwG">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
